@@ -1,4 +1,9 @@
 # C.C
+
+
+Kisisel botumdur  moderation komutlarinin permlerini kendime gore ayarladim bir suru eksiklik kusur var, kullanmadigim kod da var ne bok ararsan var 
+
+
 Komutlar
 
 +urban> Urban sözlükte arama yapar
