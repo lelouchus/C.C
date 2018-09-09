@@ -1,0 +1,33 @@
+{
+  "name": "c.c",
+  "version": "0.0.1",
+  "description": "c.c but stronger",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lelouchus",
+  "license": "ISC",
+  "dependencies": {
+    "booru": "^0.4.0",
+    "charset": "^1.0.1",
+    "discord.js": "^11.3.2",
+    "fs": "0.0.1-security",
+    "google-translate-api": "^2.3.0",
+    "jschardet": "^1.6.0",
+    "kaori": "^1.1.4",
+    "megu-randbooru": "^1.0.11",
+    "node-lolibooru": "0.0.3",
+    "opusscript": "0.0.6",
+    "random-puppy": "^1.1.0",
+    "relevant-urban": "^2.0.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "simple-youtube-api": "^5.0.2",
+    "snekfetch": "^4.0.4",
+    "superagent": "^3.8.3",
+    "urban-dictionary": "^2.1.2",
+    "weather-js": "^2.0.0",
+    "ytdl-core": "^0.24.0"
+  }
+}
