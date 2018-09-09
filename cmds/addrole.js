@@ -4,20 +4,20 @@ let dev = ('191259118156251136');
 module.exports.run = async (bot, message, args) => {
 
   
-  if(message.author.id !== (dev)) return message.reply("YOo.") || (message.author.hasPermission('MANAGE_ROLES'))
+  if(!message.author.hasPermission('MANAGE_ROLES')) return message.reply("Yoo.");
   if (!message.guild.member(bot.user).hasPermission("MANAGE_ROLES")) return message.channel.send('YEtkimi GEri Ver!!');
   if(!args[0]){ 
     message.reply("Usage: !addrole <user> <role>");
     return;
   }
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
-  if(!rMember) return message.reply("Couldn't find that user, yo.");
+  if(!rMember) return message.reply("Kullaniciyi bulamadim.");
   let role = args.join(" ").slice(22);
-  if(!role) return message.reply("Specify a role!");
+  if(!role) return message.reply("Rol BEliRt!");
   let gRole = message.guild.roles.find(`name`, role);
-  if(!gRole) return message.reply("Couldn't find that role.");
+  if(!gRole) return message.reply("rolu bulamadim.");
 
-  if(rMember.roles.has(gRole.id)) return message.reply("❌ They already have that role.");
+  if(rMember.roles.has(gRole.id)) return message.reply("zaten o role sahip.");
   await(rMember.addRole(gRole.id));
 
   try{
